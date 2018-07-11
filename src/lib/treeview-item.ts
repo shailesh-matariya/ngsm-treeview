@@ -150,8 +150,15 @@ export class TreeviewItem {
             }
         } else {
             const selection = TreeviewHelper.concatSelection(this.internalChildren, checkedItems, uncheckedItems);
-            checkedItems = selection.checked;
-            uncheckedItems = selection.unchecked;
+            if (this.internalChecked) {
+                checkedItems.push(this);
+            }
+            else {
+                uncheckedItems.push(this);
+            }
+
+            checkedItems = checkedItems.concat(selection.checked);
+            uncheckedItems = uncheckedItems.concat(selection.unchecked);
         }
 
         return {
