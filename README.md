@@ -3,8 +3,11 @@
 [![npm version](https://img.shields.io/npm/v/ngx-treeview.svg)](https://www.npmjs.com/package/ngx-treeview)
 [![npm](https://img.shields.io/npm/l/ngx-treeview.svg)]()
 
-# ngx-treeview
+# ngsm-treeview
 
+This repository is forked from ngx-treeview to add an extra feature for checked unchecked items.
+
+#ngx-treeview
 An Angular treeview component with checkbox
 
 ## Dependencies
