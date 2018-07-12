@@ -123,18 +123,7 @@ export class TreeviewItem {
             }
             this.internalChildren = value;
             if (!isNil(this.internalChildren)) {
-                let checked = null;
-                this.internalChildren.forEach(child => {
-                    if (checked === null) {
-                        checked = child.checked;
-                    } else {
-                        if (child.checked !== checked) {
-                            checked = undefined;
-                            return;
-                        }
-                    }
-                });
-                this.internalChecked = checked;
+                this.internalChecked = this.checked;
             }
         }
     }

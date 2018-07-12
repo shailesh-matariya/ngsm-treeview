@@ -1,6 +1,6 @@
 {
   "name": "ngsm-treeview",
-  "version": "6.0.0",
+  "version": "6.0.2",
   "license": "MIT",
   "description": "An Angular treeview component with checkbox. Forked from ngx-treeview.",
   "scripts": {
